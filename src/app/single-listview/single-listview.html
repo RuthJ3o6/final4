@@ -1,0 +1,19 @@
+<div class="container">
+    @if (singleproduct) {
+    <div class="product-detail-card">
+        <div class="detail-image">
+            <img [src]="singleproduct?.thumbnail" [alt]="singleproduct?.title" />
+        </div>
+        <div class="detail-content">
+            <p class="detail-category">{{singleproduct?.category}}</p>
+            <h1 class="detail-title">{{singleproduct?.title}}</h1>
+            <p class="detail-description">{{singleproduct?.description}}</p>
+
+            <div class="detail-price-row">
+                <span class="detail-price">${{singleproduct?.price}}</span>
+                <button class="btn btn-primary btn-lg">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    }
+</div>
